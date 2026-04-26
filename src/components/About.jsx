@@ -1,12 +1,15 @@
 import React from 'react';
+import Fotodealejo from '../assets/foto.jpeg';
 
 function About({ onContact }) {
   return (
     <section className="about" id="sobre-mi">
       <div className="about-img">
-        <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#e2e8f0', color: '#64748b', fontFamily: 'var(--font-heading)' }}>
-           Foto de Alejo
-        </div>
+        <img 
+          src={Fotodealejo} 
+          alt="Hector Alejo" 
+          style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '1rem' }}
+        />
       </div>
       <div className="about-content">
         <h2 style={{ marginBottom: '1.5rem', fontSize: '2.5rem' }}>Hola, soy Hector Xutuc Paz <br/><span style={{ color: 'var(--color-blue-600)' }}>(Alejo)</span></h2>
@@ -22,6 +25,6 @@ function About({ onContact }) {
       </div>
     </section>
   );
-}
+};
 
 export default About;
