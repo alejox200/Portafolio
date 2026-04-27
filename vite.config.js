@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: './', // Esto soluciona la página en blanco en GitHub Pages
+  build: {
+    outDir: 'docs' // Cambiamos 'dist' por 'docs' para GitHub Pages
+  }
 })
