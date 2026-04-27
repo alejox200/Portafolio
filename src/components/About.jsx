@@ -1,12 +1,12 @@
 import React from 'react';
-import Fotodealejo from '../assets/foto.jpeg';
+import TecnolejoLogo from '../assets/Tecnolejo Logo.png';
 
 function About({ onContact }) {
   return (
     <section className="about" id="sobre-mi">
       <div className="about-img">
         <img 
-          src={Fotodealejo} 
+          src={TecnolejoLogo} 
           alt="Hector Alejo" 
           style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '1rem' }}
         />

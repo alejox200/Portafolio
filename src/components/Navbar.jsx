@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Logotipo from '../assets/Tecnolejo Logo1.png';
 
 const HoverLink = ({ text, href }) => {
   const linkContainer = {
@@ -64,13 +65,16 @@ function Navbar({ onContact }) {
           variants={logoContainer}
           initial="hidden"
           animate="visible"
-          style={{ display: 'flex', overflow: 'hidden' }}
+          style={{ display: 'flex', alignItems: 'center', gap: '10px', overflow: 'hidden' }}
         >
-          {logoText.split('').map((char, index) => (
-            <motion.span key={index} variants={letterAnim} style={{ display: 'inline-block' }}>
-              {char}
-            </motion.span>
-          ))}
+          <img src={Logotipo} alt="Tecnolejo Logo" style={{ width: '60px', height: 'auto' }} /> 
+          <div style={{ fontSize: '1.8rem' }}>
+            {logoText.split('').map((char, index) => (
+              <motion.span key={index} variants={letterAnim} style={{ display: 'inline-block' }}>
+                {char === ' ' ? '\u00A0' : char}
+              </motion.span>
+            ))}
+          </div>
         </motion.div>
         
         <motion.ul 
