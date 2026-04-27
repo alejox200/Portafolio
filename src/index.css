@@ -132,6 +132,11 @@ img {
   letter-spacing: -0.5px;
 }
 
+.logo-text-wrapper {
+  font-size: 1.8rem;
+  white-space: nowrap;
+}
+
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -535,4 +540,15 @@ img {
   .nav-links { display: none; }
   .section { padding: 4rem 0; }
   .about { gap: 2rem; }
+  
+  /* Ajustes para mobile */
+  .logo-text-wrapper {
+    font-size: 1.3rem;
+  }
+  .navbar-logo img {
+    width: 45px !important;
+  }
+  .about-content h2 {
+    font-size: 1.8rem !important;
+  }
 }

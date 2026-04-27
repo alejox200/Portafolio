@@ -68,7 +68,7 @@ function Navbar({ onContact }) {
           style={{ display: 'flex', alignItems: 'center', gap: '10px', overflow: 'hidden' }}
         >
           <img src={Logotipo} alt="Tecnolejo Logo" style={{ width: '60px', height: 'auto' }} /> 
-          <div style={{ fontSize: '1.8rem' }}>
+          <div className="logo-text-wrapper">
             {logoText.split('').map((char, index) => (
               <motion.span key={index} variants={letterAnim} style={{ display: 'inline-block' }}>
                 {char === ' ' ? '\u00A0' : char}
