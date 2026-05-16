@@ -7,7 +7,7 @@ function Pricing({ onContact }) {
       id: 1,
       title: 'Plan Web Esencial',
       setup: '1,400',
-      monthly: '350',
+      monthly: '450',
       desc: 'Tu negocio en línea 24/7 con diseño profesional.',
       features: [
         'Diseño Web Impactante',

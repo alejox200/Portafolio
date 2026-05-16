@@ -10,14 +10,14 @@ function Services({ onContact }) {
     },
     {
       id: 2,
-      name: 'Plan Web + SEO Básico',
-      desc: 'Añadimos optimización para Google (SEO). Ayudamos a que tu negocio sea encontrado por las personas que ya están buscando lo que ofreces.',
+      name: 'Plan Web + IA Automatización',
+      desc: 'Añadimos Automatización con Inteligencia Aritificial. Ayudamos a que tu negocio tenga menos carga con trabajos largos, los hacemos mas sencillos y rapidos.',
       icon: '🔎'
     },
     {
       id: 3,
-      name: 'Plan Web + SEO + Redes Sociales',
-      desc: 'El ecosistema completo. Además de tu web y SEO, gestionamos tus redes con contenido dinámico (Reels y Posts) editado profesionalmente.',
+      name: 'Plan Web + IA + Redes Sociales',
+      desc: 'El ecosistema completo. Además de tu web y IA, gestionamos tus redes con contenido dinámico (Reels y Posts) editado profesionalmente.',
       icon: '📱'
     }
   ];
