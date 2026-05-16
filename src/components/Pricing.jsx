@@ -6,7 +6,7 @@ function Pricing({ onContact }) {
     {
       id: 1,
       title: 'Plan Web Esencial',
-      setup: '1,200',
+      setup: '1,400',
       monthly: '350',
       desc: 'Tu negocio en línea 24/7 con diseño profesional.',
       features: [
@@ -21,30 +21,30 @@ function Pricing({ onContact }) {
     },
     {
       id: 2,
-      title: 'Plan Web + SEO Básico',
+      title: 'Plan Web + IA Automaticación',
       setup: '1,800',
       monthly: '600',
       desc: 'Atrae y captura clientes a través de Google.',
       features: [
         'Todo lo del Plan Esencial',
-        'Optimización SEO en Google',
+        'Automatización de trabajos con IA',
         'Mayor velocidad de carga',
         'Mantenimiento Mensual Prioritario'
       ],
-      btnText: 'Elegir Web + SEO',
+      btnText: 'Elegir Web + IA Automaticación',
       popular: true,
       inverse: true
     },
     {
       id: 3,
-      title: 'Plan Total (Web + SEO + Redes)',
+      title: 'Plan Total (Web + IA + Redes)',
       setup: '2,200',
       monthly: '800',
       desc: 'El paquete definitivo para dominar el mercado.',
       features: [
         'Todo lo del Plan Web + SEO',
         'Gestión de Redes Sociales',
-        '6 posts + 4 Reels al mes',
+        '4 posts + 2 Reels al mes',
         'Estrategia de Contenido'
       ],
       btnText: 'Elegir Plan Total',
