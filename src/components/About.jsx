@@ -1,5 +1,5 @@
 import React from 'react';
-import Logotipo from '../assets/Tecnolejo Logo.png';
+import Logotipo from '../assets/LogoTecnolejoAct.jpg';
 
 function About({ onContact }) {
   return (
