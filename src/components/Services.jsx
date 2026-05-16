@@ -11,7 +11,7 @@ function Services({ onContact }) {
     {
       id: 2,
       name: 'Plan Web + IA Automatización',
-      desc: 'Añadimos Automatización con Inteligencia Aritificial. Ayudamos a que tu negocio tenga menos carga con trabajos largos, los hacemos mas sencillos y rapidos.',
+      desc: 'Añadimos Automatización con Inteligencia Artificial. Ayudamos a que tu negocio tenga menos carga con trabajos largos, los hacemos más sencillos y rápidos.',
       icon: '🔎'
     },
     {

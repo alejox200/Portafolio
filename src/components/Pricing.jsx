@@ -6,7 +6,7 @@ function Pricing({ onContact }) {
     {
       id: 1,
       title: 'Plan Web Esencial',
-      setup: '1,400',
+      setup: '1,500',
       monthly: '450',
       desc: 'Tu negocio en línea 24/7 con diseño profesional.',
       features: [
@@ -21,7 +21,7 @@ function Pricing({ onContact }) {
     },
     {
       id: 2,
-      title: 'Plan Web + IA Automaticación',
+      title: 'Plan Web + IA Automatización',
       setup: '1,800',
       monthly: '600',
       desc: 'Atrae y captura clientes a través de Google.',
@@ -31,7 +31,7 @@ function Pricing({ onContact }) {
         'Mayor velocidad de carga',
         'Mantenimiento Mensual Prioritario'
       ],
-      btnText: 'Elegir Web + IA Automaticación',
+      btnText: 'Elegir Web + IA Automatización',
       popular: true,
       inverse: true
     },
@@ -64,15 +64,15 @@ function Pricing({ onContact }) {
 
       <div className="pricing-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', maxWidth: '1150px', margin: '0 auto', alignItems: 'end' }}>
         {plans.map(plan => (
-          <div 
-            key={plan.id} 
+          <div
+            key={plan.id}
             className="pricing-card"
-            style={{ 
-              backgroundColor: plan.inverse ? 'var(--color-blue-900)' : 'var(--color-white)', 
+            style={{
+              backgroundColor: plan.inverse ? 'var(--color-blue-900)' : 'var(--color-white)',
               color: plan.inverse ? 'var(--color-white)' : 'var(--color-gray-900)',
               border: plan.inverse ? 'none' : '1px solid var(--color-gray-200)',
               boxShadow: plan.inverse ? '0 20px 25px -5px rgba(30, 58, 138, 0.4)' : '0 4px 6px -1px rgba(0,0,0,0.05)',
-              padding: plan.inverse ? '3.5rem 1.5rem' : '3rem 1.5rem', 
+              padding: plan.inverse ? '3.5rem 1.5rem' : '3rem 1.5rem',
               textAlign: 'left'
             }}
           >
@@ -107,15 +107,15 @@ function Pricing({ onContact }) {
                 inicial
               </span>
             </div>
-            
+
             <div style={{ fontSize: '1.1rem', color: plan.inverse ? 'rgba(255,255,255,0.9)' : 'var(--color-gray-800)', marginBottom: '2rem' }}>
               Mensual: <strong style={{ color: plan.inverse ? 'var(--color-white)' : 'var(--color-blue-600)' }}>Q{plan.monthly}</strong>
             </div>
-            
-            <button 
-              className="btn" 
-              style={{ 
-                width: '100%', 
+
+            <button
+              className="btn"
+              style={{
+                width: '100%',
                 marginBottom: '2rem',
                 backgroundColor: plan.inverse ? 'var(--color-white)' : 'var(--color-gray-100)',
                 color: plan.inverse ? 'var(--color-blue-900)' : 'var(--color-gray-900)',
@@ -138,15 +138,15 @@ function Pricing({ onContact }) {
 
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, textAlign: 'left' }}>
               {plan.features.map((f, i) => (
-                <li key={i} style={{ 
-                  marginBottom: '1rem', 
-                  display: 'flex', 
-                  alignItems: 'center', 
+                <li key={i} style={{
+                  marginBottom: '1rem',
+                  display: 'flex',
+                  alignItems: 'center',
                   gap: '0.5rem',
                   color: plan.inverse ? 'rgba(255,255,255,0.9)' : 'var(--color-gray-800)',
                   fontSize: '0.95rem'
                 }}>
-                  <span style={{ color: plan.inverse ? '#60a5fa' : 'var(--color-blue-600)', fontWeight: 'bold' }}>✓</span> 
+                  <span style={{ color: plan.inverse ? '#60a5fa' : 'var(--color-blue-600)', fontWeight: 'bold' }}>✓</span>
                   {f}
                 </li>
               ))}
