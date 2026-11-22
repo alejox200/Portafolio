@@ -1,12 +1,17 @@
 import React from 'react';
+import TecnoHorizontal from '../assets/TecnoHorizontal.png';
 
 function Footer() {
   return (
     <footer className="footer">
-      <div className="container">
-        <h3 style={{ fontFamily: 'var(--font-heading)', color: 'white', marginBottom: '1rem', fontSize: '1.5rem' }}>Tecnolejo</h3>
-        <p style={{ marginBottom: '2rem' }}>Diseño y Marketing Digital en Guatemala enfocado en resultados.</p>
-        <p style={{ fontSize: '0.875rem', color: '#6b7280' }}>
+      <div className="container footer-inner">
+        <div className="footer-brand">
+          <img src={TecnoHorizontal} alt="Tecnolejo" className="footer-logo-full" />
+        </div>
+        <p className="footer-desc">
+          Empresa tecnológica guatemalteca — Páginas web, aplicaciones a medida e inteligencia artificial.
+        </p>
+        <p className="footer-copy">
           &copy; {new Date().getFullYear()} Tecnolejo por Hector Alejandro Xutuc Paz (Alejo). Todos los derechos reservados.
         </p>
       </div>

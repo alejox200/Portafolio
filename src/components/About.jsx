@@ -1,23 +1,26 @@
 import React from 'react';
-import Logotipo from '../assets/LogoTecnolejoAct.jpg';
+import LogotipoActualizado from '../assets/Tecnolejo.jpeg';
 
 function About({ onContact }) {
   return (
-    <section className="about" id="sobre-mi">
+    <section className="about" id="sobre-nosotros">
       <div className="about-img">
         <img 
-          src={Logotipo} 
-          alt="Logotipo" 
-          style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '1rem' }}
+          src={LogotipoActualizado} 
+          alt="Tecnolejo - Logotipo Oficial" 
         />
       </div>
       <div className="about-content">
-        <h2 style={{ marginBottom: '1.5rem', fontSize: '2.5rem' }}>Hola, soy Hector Alejandro Xutuc Paz <br/><span style={{ color: 'var(--color-blue-600)' }}>(Alejo)</span></h2>
-        <p style={{ fontSize: '1.1rem', marginBottom: '1.5rem', color: 'var(--color-gray-800)' }}>
-          Soy el fundador de <strong>Tecnolejo</strong>. Combino la disciplina y la producción audiovisual de alto impacto con el desarrollo de software avanzado e Inteligencia Artificial.
+        <span className="section-eyebrow">Sobre Nosotros</span>
+        <h2>
+          Transformamos negocios a través de{' '}
+          <span className="brand-accent">tecnología e innovación</span>
+        </h2>
+        <p>
+          En <strong>Tecnolejo</strong> somos una empresa tecnológica guatemalteca dedicada a crear soluciones digitales modernas, confiables y diseñadas para generar resultados reales en cada negocio.
         </p>
-        <p style={{ fontSize: '1.1rem', marginBottom: '2rem', color: 'var(--color-gray-800)' }}>
-          Mi visión es aportar la adaptabilidad de las nuevas tecnologías, respaldado por un enfoque de liderazgo y resolución de problemas, para potenciar la marca de mis clientes y multiplicar sus ventas.
+        <p>
+          Nos especializamos en el desarrollo de <strong>páginas web estáticas y corporativas</strong> de alto impacto, <strong>aplicaciones web a medida</strong> adaptadas a tus flujos de trabajo e <strong>integración con inteligencia artificial</strong> para automatizar tareas, optimizar tiempos operativos y escalar tus ventas.
         </p>
         <button className="btn btn-primary" onClick={onContact}>
           Hablemos de tu proyecto
@@ -25,6 +28,6 @@ function About({ onContact }) {
       </div>
     </section>
   );
-};
+}
 
 export default About;
